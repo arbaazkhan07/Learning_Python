@@ -29,7 +29,14 @@ Type code	C TypePython	 	  Type		            Minimum size in bytes
 'd'		    double			      float		  	                    8
 """
 
-from numpy import *
+from array import *
 
-var = array([1, 2, 3, 4])
+# 'i' and 'I'
+
+var = array('I', [1, 2, 3, 4])
 print(var)
+
+var1 = array('i', [5, 6, -7, 8])
+print(var1)
+
+#
