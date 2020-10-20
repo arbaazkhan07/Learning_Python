@@ -1,6 +1,6 @@
 # from numpy import *
 """
-Type code	C TypePython	 	  Type		            Minimum size in bytes
+Type code	C Type	 	        Python Type		            Minimum size in bytes
 
 'b'		    signed char		      int		   	                    1
 
