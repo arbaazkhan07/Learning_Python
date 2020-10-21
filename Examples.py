@@ -107,7 +107,7 @@ else :
 
 # Guessing Numbers (GAME)
 
-real = 6
+'''real = 6
 guess = 0
 
 print('\t\t\t\tGuess the REAL number\n')
@@ -126,7 +126,7 @@ for guess in range(5):
     else:
         print('Right guess.. GAME OVER')
         print('You saved', 4 - guess, 'guesses..')
-        break
+        break'''
 
 # Prime or not
 
@@ -144,3 +144,113 @@ while n == 0:
         print('0 , 1 or Nagetive numbers are already NON-PRIME numbers..\nPls enter positive numbers above 1..')
         continue
     break'''
+
+# Health Management System
+
+def Arbaaz_Khan():
+    print("* Well Arbaaz Khan selected")
+    print("  Now, Choose below options:")
+    print("\t1.Log\n\t2.Retrive")
+    print("  (Again choose only numbers)")
+    log_retrive = int(input())
+    if log_retrive == 1:
+        print("* Ok.. Npw what you want to Log ?")
+        print("\t1.Exercise\n\t2.Food")
+        ex_fo = int(input())
+        if ex_fo == 1:
+            with open("Arbaazkhan ExFo.txt", "w") as w:
+                w.write("Exercise: ")
+            with open("Arbaazkhan ExFo.txt", "a") as ak:
+                ak.write(input("Enter Exercise name: "))
+                ak.write("\n")
+        elif ex_fo == 2:
+            with open("Arbaazkhan ExFo.txt", "a") as w:
+                w.write("Food: ")
+            with open("Arbaazkhan ExFo.txt", "a") as ak0:
+                ak0.write(input("Enter Food name: "))
+        else:
+            print("Invalid number..")
+    elif log_retrive == 2:
+        print("Your saved data is given below..\n")
+        with open("Arbaazkhan ExFo.txt") as ak1:
+            print(ak1.read())
+    else:
+        print("Invalid number..")
+
+
+def Harry_Coder():
+    print("* Well Harry Coder selected")
+    print("  Now, Choose below options:")
+    print("\t1.Log\n\t2.Retrive")
+    print("  (Again choose only numbers)")
+    log_retrve = int(input())
+    if log_retrve == 1:
+        print("* Ok.. Npw what you want to Log ?")
+        print("\t1.Exercise\n\t2.Food")
+        ex_fo = int(input())
+        if ex_fo == 1:
+            with open("HarryCoder ExFo.txt", "w") as w:
+                w.write("Exercise: ")
+            with open("HarryCoder ExFo.txt", "a") as ak:
+                ak.write(input("Enter Exercise name: "))
+                ak.write("\n")
+        elif ex_fo == 2:
+            with open("HarryCoder ExFo.txt", "a") as w:
+                w.write("Food: ")
+            with open("HarryCoder ExFo.txt", "a") as ak:
+                ak.write(input("Enter Food name: "))
+        else:
+            print("Invalid number..")
+    elif log_retrve == 2:
+        print("Your saved data is given below..\n")
+        with open("HarryCoder ExFo.txt") as ak1:
+            print(ak1.read())
+    else:
+        print("Invalid number..")
+
+
+def Telusko():
+    print("* Well Telusko  selected")
+    print("  Now, Choose below options:")
+    print("\t1.Log\n\t2.Retrive")
+    print("  (Again choose only numbers)")
+    log_retrve = int(input())
+    if log_retrve == 1:
+        print("* Ok.. Npw what you want to Log ?")
+        print("\t1.Exercise\n\t2.Food")
+        ex_fo = int(input())
+        if ex_fo == 1:
+            with open("Telusko ExFo.txt", "w") as w:
+                w.write("Exercise: ")
+            with open("Telusko ExFo.txt", "a") as ak:
+                ak.write(input("Enter Exercise name: "))
+                ak.write("\n")
+        elif ex_fo == 2:
+            with open("Telusko ExFo.txt", "a") as w:
+                w.write("Food: ")
+            with open("Telusko ExFo.txt", "a") as ak:
+                ak.write(input("Enter Food name: "))
+        else:
+            print("Invalid number..")
+    elif log_retrve == 2:
+        print("Your saved data is given below..\n")
+        with open("Telusko ExFo.txt") as ak1:
+            print(ak1.read())
+    else:
+        print("Invalid number..")
+
+
+print("\t\t\tHealth Management System\n")
+print("* Choose clients:")
+print("\t1.Arbaaz Khan\n\t2.Harry Coder\n\t3.Telusko ")
+print("  (Choose only numbers)")
+in_num = int(input())
+if in_num == 1:
+    Arbaaz_Khan()
+elif in_num == 2:
+    Harry_Coder()
+elif in_num == 3:
+    Telusko()
+else:
+    print("Invalid number..")
+
