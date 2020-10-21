@@ -78,24 +78,51 @@ f.close()'''
 # w : w mode does not concern itself with what is present in the file. It just opens a file for writing and if there is
 #     already some data present in the file, it overwrites it.
 
-with open("File_Writing.txt", "w") as fw:
+'''with open("File_Writing.txt", "w") as fw:
     fw.write("Hello! My name is khan..\n")
     fw.write("I'm 23 year old..\n")
     # size = fw.write("Hello! My name is khan..")
-    # print(size)   #prints the size of text
-
+    # print(size)   #prints the size of text'''
 
 # a : a stands for append, which means to add something to the end of the file. It does exactly the same. It just adds
 #     the data we like in write(w) mode but instead of overwriting it just adds it to the end of the file. It also does
 #     not have the permission of reading the file.
 
-with open("File_Writing.txt", "a") as fw1:
+'''with open("File_Writing.txt", "a") as fw1:
     fw1.write("aaaaaaaaaaaaaaaaaaaaa\n")
-    fw1.write("zzzzzzzzzzzzzzzzzzzzz\n")
+    fw1.write("zzzzzzzzzzzzzzzzzzzzz\n")'''
 
 # Both READ and WRITE
 
-with open("File_Writing.txt", "r+") as rw:
+'''with open("File_Writing.txt", "r+") as rw:
     print(rw.read())
     rw.write('Bye bye')
-    print(rw.read())
+    print(rw.read())'''
+
+# tell()
+
+'''with open("file_opening.txt") as t:
+    print(t.tell())
+    print(t.readline())
+    print(t.tell())
+    print(t.readline())
+    print(t.tell())'''
+
+# seek()
+
+'''with open("file_opening.txt") as s:
+    print(s.seek(0))
+    print(s.readline())
+    # print(s.readlines())  # prints a List of all lines
+    print(s.seek(10))
+    print(s.readline())
+    print(s.seek(26))
+    print(s.readline())'''
+
+# File reading 2 times with block and without block
+with open("file_opening.txt", "rt") as rtf:
+    print(rtf.readlines())
+
+rtf1 = open("file_opening.txt", "rt")
+print(rtf1.readlines())
+rtf1.close()
