@@ -103,3 +103,19 @@ print()
 
 var2 = array('u', ['A', 'e', 'i', 'o', 'u'])
 print(var2)
+
+# Adding values of an array to another array
+
+arr = array('i', [2, 4, 6, 8])
+print(arr)
+
+newArray = array(arr.typecode, (i * i for i in arr))
+print(newArray)
+
+for i in newArray:
+    print(i)
+
+w = 0
+while w < len(newArray):
+    print(newArray[w])
+    w += 1
