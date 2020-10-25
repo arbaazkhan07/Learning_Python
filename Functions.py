@@ -119,23 +119,4 @@ f1num = int(input("Enter a number to find it's Factorial: "))
 print("The Factorial of", f1num, "is:(Recursion)", recursion_factorial(f1num))'''
 
 
-# Iterative - Fibonacci
 
-def iterative_fibonacci(ifbn):
-    first = 0
-    second = 1
-    if ifbn == 0:
-        print("Plz enter above 0..")
-    elif ifbn == 1:
-        print(first)
-    else:
-        print(first, second, end=" ")
-        for i in range(ifbn - 2):
-            fibo = first + second
-            print(fibo, end=" ")
-            first = second
-            second = fibo
-
-
-f2num = int(input("Enter a how many Fibonacci numbers you want?\n"))
-iterative_fibonacci(f2num)
