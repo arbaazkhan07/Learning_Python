@@ -69,7 +69,7 @@ def ak1():
     print(var2)
 
 ak1()
-print(var2)'''
+print(var2)
 
 var3 = 0
 
@@ -87,4 +87,55 @@ def ak2():
 
 
 ak2()
-print(var3)  # 34 (Global)
+print(var3)  # 34 (Global)'''
+
+# Iterative And Recursipn
+
+# Iterative - Factorial
+
+'''def iterative_factorial(ifn):
+    fact = 1
+    for i in range(ifn):
+        fact = fact * (i + 1)
+    return fact
+
+
+fnum = int(input("Enter a number to find it's Factorial: "))
+print("The Factorial of", fnum, "is:(Iterative)", iterative_factorial(fnum))
+
+
+# Recursion - Factorial
+
+def recursion_factorial(rfn):
+    if rfn == 0:
+        return 0
+    elif rfn == 1:
+        return 1
+    else:
+        return rfn * recursion_factorial(rfn - 1)
+
+
+f1num = int(input("Enter a number to find it's Factorial: "))
+print("The Factorial of", f1num, "is:(Recursion)", recursion_factorial(f1num))'''
+
+
+# Iterative - Fibonacci
+
+def iterative_fibonacci(ifbn):
+    first = 0
+    second = 1
+    if ifbn == 0:
+        print("Plz enter above 0..")
+    elif ifbn == 1:
+        print(first)
+    else:
+        print(first, second, end=" ")
+        for i in range(ifbn - 2):
+            fibo = first + second
+            print(fibo, end=" ")
+            first = second
+            second = fibo
+
+
+f2num = int(input("Enter a how many Fibonacci numbers you want?\n"))
+iterative_fibonacci(f2num)
