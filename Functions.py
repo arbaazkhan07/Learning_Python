@@ -118,10 +118,9 @@ def recursion_factorial(rfn):
 f1num = int(input("Enter a number to find it's Factorial: "))
 print("The Factorial of", f1num, "is:(Recursion)", recursion_factorial(f1num))'''
 
-
 # Iterative - Fibonacci
 
-def iterative_fibonacci(ifbn):
+'''def iterative_fibonacci(ifbn):
     first = 0
     second = 1
     if ifbn == 0:
@@ -138,4 +137,84 @@ def iterative_fibonacci(ifbn):
 
 
 f2num = int(input("Enter a how many Fibonacci numbers you want?\n"))
-iterative_fibonacci(f2num)
+iterative_fibonacci(f2num)'''
+
+# How to pass Parameters
+
+'''def up(x):
+    print(id(x))
+    x = 3
+    print(id(x))
+    print(x)
+
+
+a = 10
+print(id(a))
+up(a)
+print(a)'''
+
+
+# Types of Parameters
+
+'''def add(x, y):  # Formal Arguments/Parameters
+    z = x + y
+    print(z)
+
+
+add(5, 6)  # Actual Parameters'''
+
+
+# Typs of Actual Parameters
+
+# Position
+
+'''def person(name, age):
+    print(name, age)
+
+
+person("Arbaaz khan", 23)
+
+
+# Keyword
+
+def person1(name, age):
+    print(name, age)
+
+
+person1(age=23, name="Arbaaz khan")
+
+
+# Default
+
+def person2(name, age=23):
+    print(name, age)
+
+
+person2("Arbaaz khan")
+
+
+# Veriable Length
+
+def add1(x, *y):  # 'x' is now 5 AND '*y' is a tuple of (6, 7, 8, 9)
+
+    print(x)
+    print(y)
+    for i in y:
+        x = x + i
+    print(x)
+
+
+add1(5, 6, 7, 8, 9)
+
+
+# OR
+
+def add2(*y):  # '*y' is a tuple of (6, 7, 8, 9)
+    x = 0
+    print(y)
+    for i in y:
+        x = x + i
+    print(x)
+
+
+add2(6, 7, 8, 9)'''
