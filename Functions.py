@@ -49,9 +49,9 @@ print('Division:', e)'''
 
 # Local And Global variables
 
-var1 = 23  # Global variable
+'''var1 = 23  # Global variable
 
-'''def ak():
+def ak():
     var1 = 10  # Local variable
     print(var1)
 
@@ -161,14 +161,14 @@ print(a)'''
     print(z)
 
 
-add(5, 6)  # Actual Parameters'''
+add(5, 6)  # Actual Parameters
 
 
 # Typs of Actual Parameters
 
 # Position
 
-'''def person(name, age):
+def person(name, age):
     print(name, age)
 
 
@@ -217,4 +217,16 @@ def add2(*y):  # '*y' is a tuple of (6, 7, 8, 9)
     print(x)
 
 
-add2(6, 7, 8, 9)'''
+add2(6, 7, 8, 9)
+
+
+#  Keyworded Variable Length
+
+def person3(name='Arbaaz khan', **details):
+    print('Name :', name)
+    # print(details)
+    for i, j in details.items():
+        print(i, ':', j)
+
+
+person3(Age=23, Address='Belgaum', Phone_no=9876543210)'''
