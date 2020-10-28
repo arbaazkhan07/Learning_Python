@@ -153,7 +153,6 @@ print(id(a))
 up(a)
 print(a)'''
 
-
 # Types of Parameters
 
 '''def add(x, y):  # Formal Arguments/Parameters
@@ -230,3 +229,23 @@ def person3(name='Arbaaz khan', **details):
 
 
 person3(Age=23, Address='Belgaum', Phone_no=9876543210)'''
+
+
+# Pass List to a Function
+
+
+'''def pass_list_fun(lst):
+    even = 0
+    odd = 0
+
+    for i in lst:
+        if i % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return even, odd
+
+
+lst = [75, 49, 88, 46, 72, 89, 46, 87, 28, 65, 87, 98, 74, 65, 83, 74, 56, 77, 84, 35, 79, 85, 87, 29]
+even, odd = pass_list_fun(lst)
+print(f'Even numbers: {even} and Odd numbers: {odd}')'''
