@@ -147,7 +147,7 @@ while n == 0:
 
 # Health Management System
 
-def Arbaaz_Khan():
+'''def Arbaaz_Khan():
     print("* Well Arbaaz Khan selected")
     print("  Now, Choose below options:")
     print("\t1.Log\n\t2.Retrive")
@@ -252,5 +252,66 @@ elif in_num == 2:
 elif in_num == 3:
     Telusko()
 else:
-    print("Invalid number..")
+    print("Invalid number..")'''
 
+#  Snake Water Gun game..
+
+'''from random import *
+
+chance = 10
+loop = 1
+computer = ['Snake', 'Water', 'Gun']
+user_points = 0
+computer_points = 0
+print('\n\t\t\tSnake Water Gun game..\n')
+print('* Choose 1 of 3 options:\n')
+print(f'\t1.Snake ( s/S )\n\t2.Water ( w/W )\n\t3.Gun   ( g/G )\n\tYou have {chance} chances\n')
+while loop <= chance:
+    c = choice(computer)
+    inp = input('Enter your choice ( Numbers, Full name or s/w/g (S/W/G) ):\n')
+    if inp == '1' or inp == 'Snake' or inp == 's' or inp == 'S' or inp == 'snake' or inp == 'SNAKE':
+        print('Your choice: Snake')
+        print(f'Computer choice: {c}')
+        if c == 'Water':
+            user_points = user_points + 5
+            print(f'You got {user_points} points..')
+        elif c == 'Gun':
+            computer_points = computer_points + 5
+            print(f'Computer got {computer_points} points..')
+        else:
+            print('0 points for both YOU and COMPUTER')
+    elif inp == '2' or inp == 'Water' or inp == 'w' or inp == 'W' or inp == 'water' or inp == 'WATER':
+        print('Your choice: Water')
+        print(f'Computer choice: {c}')
+        if c == 'Gun':
+            print('You got 5 points..')
+            user_points = user_points + 5
+        elif c == 'Snake':
+            print('Computer got 5 points..')
+            computer_points = computer_points + 5
+        else:
+            print('0 points for both YOU and COMPUTER')
+    elif inp == '3' or inp == 'Gun' or inp == 'g' or inp == 'G' or inp == 'gun' or inp == 'GUN':
+        print('Your choice: Gun')
+        print(f'Computer choice: {c}')
+        if c == 'Snake':
+            print('You got 5 points..')
+            user_points = user_points + 5
+        elif c == 'Water':
+            print('Computer got 5 points..')
+            computer_points = computer_points + 5
+        else:
+            print('0 points for both YOU and COMPUTER')
+    else:
+        print('Invalid input..')
+        print(f'{chance - loop} chance left')
+    print(f'You: {user_points} points')
+    print(f'Computer: {computer_points} points')
+    print(f'{chance - loop} chance left')
+    loop += 1
+if user_points > computer_points:
+    print('\t\t\tCongractulations..!! You have won the game..')
+elif user_points < computer_points:
+    print('\t\t\tComputer has won the game..')
+else:
+    print('\t\t\tNO WINNER and NO LOOSER')'''
