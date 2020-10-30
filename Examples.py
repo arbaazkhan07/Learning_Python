@@ -44,37 +44,26 @@ print("input any of three vishnu/house/mom")
 print(d1[input()])'''
 
 # Dictionary
-''''dictionary = {
+'''dictionary = {
     'List': 'List is a collection which is ordered and changeable. Allows duplicate members.',
     'Tuple': 'Tuple is a collection which is ordered and unchangeable. Allows duplicate members.',
     'Set': 'Set is a collection which is unordered and unindexed. No duplicate members.',
     'Dictionary': 'Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.'
 }
-'''
+
 # print(dictionary.keys())
 
-'''print('Enter the options geven below\n\n1.List\n2.Tuple\n3.Set\n4.Dictionary')
+print('Enter the options geven below\n\n1.List\n2.Tuple\n3.Set\n4.Dictionary')
 
 # User input
 userin = input()
 
 # Checking KEYS and printing VALUES
-if userin in dictionary.keys():
+if userin in dictionary:
     print(dictionary[userin])
 else:
     print('Oops! Invalid option')'''
 
-'''mean={
-    "set":"A set is a group of things that belong together",
-    "accumulation":"the acquisition or gradual gathering of something",
-    "access":"an attack or outburst of an emotion",
-    "power":"the ability or capacity to do something or act in a particular way"}
-print("Enter your word: ")
-var=input()
-if var in mean:
-    print(mean[var])
-else:
-    print("Wrong input")'''
 
 # Foulty Calculator
 
