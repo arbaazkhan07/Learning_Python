@@ -107,11 +107,11 @@ for guess in range(5):
     if real > in_num:
         print('Smaller guess')
         print('Guess left :', 4 - guess)
-        continue
+        #continue
     elif in_num > real:
         print('Greater guess')
         print('Guess left :', 4 - guess)
-        continue
+        #continue
     else:
         print('Right guess.. GAME OVER')
         print('You saved', 4 - guess, 'guesses..')
@@ -304,3 +304,36 @@ elif user_points < computer_points:
     print('\t\t\tComputer has won the game..')
 else:
     print('\t\t\tNO WINNER and NO LOOSER')'''
+
+
+# Fibonnacci
+
+first = 0
+second = 1
+# iterative_fibonacci(f2num)
+# print(first,second,end="")
+t = 0
+while t == 0:
+    f2num = int(input("Enter how many Fibonacci numbers you want?\n"))
+    if f2num == 1:
+        print(first)
+        break
+
+    elif f2num == 2:
+        print(first)
+        print(second)
+        break
+
+    elif f2num > 2:
+        print(first)
+        print(second)
+        for i in range(f2num - 2):
+            third = first + second
+            print(third)
+            first = second
+            second = third
+        break
+
+    else:
+        print('Invalid number..')
+        continue
