@@ -1,4 +1,4 @@
-'''list0 = [['C' , 'is better'] ,
+"""list0 = [['C' , 'is better'] ,
         ['C++' , 'is better than C'] ,
         ['JAVA' , 'is better than C++'] ,
         ['C#' , 'is better than JAVA'] ,
@@ -15,14 +15,12 @@ for x in dict0.keys():
     print(x)
 
 for x in dict0.values():
-    print(x)'''
-
+    print(x)"""
 
 '''lst = ['Arbaaz' , 'Khan' , 1 , 2 ,3 , 4 , 5 , 6 , 5 , 9 , 8 , 0 , 7 , 8 , 34 , 44 , 65 , 87 , 2345]
 for item in lst :
     if str(item).isnumeric() and item > 6 :
         print(item)'''
-
 
 '''list = ['Eggs', 'chicken', 5050, 12,56,345,35355]
 for list in list:
@@ -32,7 +30,7 @@ for list in list:
     if (type(list) == str) :
         print(list)'''
 
-    # RANGE
+# RANGE
 '''for i in range(10) :
     print(i)
 
@@ -42,7 +40,7 @@ for i in range(21 , 31) :
 for i in range( 31, 41 , 2) :
     print(i)'''
 
-        # TABLE
+# TABLE
 
 '''num = int(input('Enter a number : '))
 for i in range(1 , 11) :
@@ -54,16 +52,15 @@ for i in range(1 , 11 , -1) :
     table = num * i
     print(num , '*' , i , '=' , table)'''
 
-        # Sum of numbers
+# Sum of numbers
 '''sum = 0
 for i in range(1 , 101) :
     sum = sum + i
 print(sum)'''
 
-
 # END=''
 
-#list1 = ['C' , 'C++' , 'JAVA' , 'C#' , 'PYTHON']
+# list1 = ['C' , 'C++' , 'JAVA' , 'C#' , 'PYTHON']
 '''for x in list1 :
     print(x, end=' ')
 
@@ -73,18 +70,30 @@ print()
 for x in 'PYTHON' :
     print(x)'''
 
+# for with else
 
-        # for with else
-
-student = 'Nisarg'
+'''student = 'Nisarg'
 marks = {
-    'Arbaaz' : {'C' : 98 , 'JAVA' : 99 , 'PYTHON' : 100},
-    'Maaz' : {'C' : 50 , 'JAVA' : 60 , 'PYTHON' : 70},
-    'Rohit' : {'C' : 40 , 'JAVA' : 50 , 'PYTHON' : 60}
+    'Arbaaz': {'C': 98, 'JAVA': 99, 'PYTHON': 100},
+    'Maaz': {'C': 50, 'JAVA': 60, 'PYTHON': 70},
+    'Rohit': {'C': 40, 'JAVA': 50, 'PYTHON': 60}
 }
-for i in marks.items() :
+for i in marks.items():
     print(i)
-    if i == student :
+    if i == student:
         print(i)
-else :
-    print('Nisarg is DEAD')
+else:
+    print('Nisarg is DEAD')'''
+
+##########
+
+lis = ['Arbaaz khan', 'Shah Rukh Khan', 'Salman khan', 'Amir khan']
+
+for i in lis:
+    print(i, 'and', end=' ')
+
+# Join function
+
+print()
+j = ' and '.join(lis)
+print(j)
