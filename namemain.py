@@ -12,3 +12,4 @@ if __name__ == '__main__':
     add(2, 4)
     strr('Arbaaz khan')
 
+

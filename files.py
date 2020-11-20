@@ -35,7 +35,12 @@ f.close()'''
 '''with open('File_opening.txt') as f:
     print('1.', f.name, 'is the file name')  # File name
     print('2.', f.mode, 'is the file mode')  # file mode
-    print('3.', f.read())
+    print()
+    print(f.read())
+
+
+print()
+print()
 
 with open('File_opening.txt', 'r') as f1:
     # print(f1.readline())  # prints only one line
@@ -56,6 +61,7 @@ with open('File_opening.txt', 'r') as f2:
     while len(file_data) > 0:
         print(file_data, end=" || ")
         file_data = f2.read(size_of_file)
+print()
 print()
 with open('File_opening.txt', 'r') as f3:
     print(f3.readlines())'''
@@ -120,9 +126,10 @@ f.close()'''
     print(s.readline())'''
 
 # File reading 2 times with block and without block
-with open("file_opening.txt", "rt") as rtf:
+
+'''with open("file_opening.txt", "rt") as rtf:
     print(rtf.readlines())
 
 rtf1 = open("file_opening.txt", "rt")
 print(rtf1.readlines())
-rtf1.close()
+rtf1.close()'''

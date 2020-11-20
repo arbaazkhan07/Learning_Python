@@ -64,7 +64,6 @@ if userin in dictionary:
 else:
     print('Oops! Invalid option')'''
 
-
 # Foulty Calculator
 
 '''num1 = int(input('Enter 1st number..\n'))
@@ -305,10 +304,9 @@ elif user_points < computer_points:
 else:
     print('\t\t\tNO WINNER and NO LOOSER')'''
 
-
 # Fibonnacci
 
-first = 0
+'''first = 0
 second = 1
 # iterative_fibonacci(f2num)
 # print(first,second,end="")
@@ -336,4 +334,13 @@ while t == 0:
 
     else:
         print('Invalid number..')
-        continue
+        continue'''
+
+
+def function():
+    print('Fuck you all..!')
+
+
+func = function
+del function
+func()
