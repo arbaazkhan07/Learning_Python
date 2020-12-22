@@ -93,7 +93,6 @@ d.Before()
 del d.age
 # d.After() --> 'Delete' object has no attribute 'age' '''
 
-
 # Delete object
 
 '''class Person:
@@ -110,3 +109,42 @@ p1 = Person("Arbaaz khan", 23)
 del p1
 
 # print(p1) --> name 'p1' is not defined'''
+
+##########################
+
+'''class Khan:
+    age = 23
+
+    def __init__(self):
+        self.name = 'Arbaaz khan'
+
+
+k = Khan()
+print(k.name, '\n', k.age)
+print(k.__dict__)
+k.age = 22
+print(k.age)
+print(k.__dict__)
+print(Khan.age)
+print(Khan.__dict__)
+Khan.age = 24
+print(Khan.__dict__)'''
+
+
+##########################
+
+class Khan:
+    age = 23
+
+    def __init__(self):
+        self.name = 'Arbaaz khan'
+
+    @classmethod
+    def change_age(cls, age):
+        cls.age = age
+
+
+k = Khan()
+print(k.age)  # Before
+k.change_age(25)
+print(k.age)  # After
